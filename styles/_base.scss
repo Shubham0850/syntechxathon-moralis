@@ -42,6 +42,13 @@ $font-secondary: "Joyride";
     color: #fff;
     font-size: 15px;
 }
+.h3{
+    font-family: $font-secondary;
+    color: #fff;
+    font-size: 18px !important;
+}
+
+
 @media only screen and (max-width: 600px){
    .h1{
     font-size: 2em !important;
@@ -97,17 +104,19 @@ p {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #fff;
+   
+
+    background: radial-gradient(18.02% 49.93% at 55.58% 50.07%, #b1d26f 0%, #b1d26f 0.01%, #60e7ce 100%);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: radial-gradient(18.02% 49.93% at 55.58% 50.07%, #b1d26f 0%, #b1d26f 0.01%, #60e7ce 100%);
+    background: #fff;
 }
 
 /* Handle on hover */

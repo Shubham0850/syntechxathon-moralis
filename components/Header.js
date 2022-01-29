@@ -27,7 +27,7 @@ export default function Header() {
             <Col sm={12} md={6} className="header__col sm-mb-5">
               <HeaderNftCard
                 imgSrc={
-                  "https://media.voguebusiness.com/photos/61b8dfb99ba90ab572dea0bd/3:4/w_1998,h_2664,c_limit/adidas-nft-voguebus-adidas-nft-dec-21-story.jpg"
+                  "https://boardroom.tv/wp-content/uploads/2021/11/Overtime-x-NFT-FC.gif"
                 }
               />
             </Col>
