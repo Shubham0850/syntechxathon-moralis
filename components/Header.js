@@ -11,7 +11,7 @@ export default function Header() {
           <Row className="header__row">
             <Col sm={12} md={6} className="header__col">
               <div>
-                <h1 className="h1">NFT's marketplace for Sports lover</h1>
+                <h1 className="h1">{`NFT's marketplace for Sports lover`}</h1>
                 <p className="p mb-5">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum is simply dummy text of the
