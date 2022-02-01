@@ -99,8 +99,9 @@ $font-secondary: "Joyride";
 }
 
 // OVERWRITE VALUE
-p {
-    margin-bottom: 0 !important;
+ion-icon{
+    font-size: 25px;
+    font-weight: bold;
 }
 
 ::-webkit-scrollbar {
