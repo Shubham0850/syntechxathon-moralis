@@ -11,68 +11,12 @@ export default function Footer() {
             <Col md={6} className="sm-mb-5">
               <img src="/f-logo.png" alt="logo" className="footer__logo mb-3" />
               <p className="p mb-3">
-                {`NFT Marketplace for game lovers. Buy, sell, and discover exclusive digital items.`}
+                {`Your only Defi Dashboard for all your assests - Ethereum, Polygon, Avalanche and more.`}
               </p>
-              {/* <Row>
-                <Col>
-                  <a
-                    href=""
-                    rel="noreferrer"
-                    target="_blank"
-                    className="footer__social-icon"
-                  >
-                    <Image
-                      src="/icons/fb.svg"
-                      alt="fb"
-                      width={25}
-                      height={25}
-                    />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/sbrphotofilms/?utm_medium=copy_link"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="footer__social-icon"
-                  >
-                    <Image
-                      src="/icons/ig.svg"
-                      alt="ig"
-                      width={25}
-                      height={25}
-                    />
-                  </a>
-                  <a
-                    href="https://wa.me/919798936441"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="footer__social-icon"
-                  >
-                    <Image
-                      src="/icons/wa.svg"
-                      alt="wa"
-                      width={25}
-                      height={25}
-                    />
-                  </a>
-                  <a
-                    href="https://www.youtube.com/channel/UCwizlnwmhZgspMOQyUgKqww"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="footer__social-icon"
-                  >
-                    <Image
-                      src="/icons/yt.svg"
-                      alt="ig"
-                      width={25}
-                      height={25}
-                    />
-                  </a>
-                </Col>
-              </Row> */}
             </Col>
 
             <Col md={2} className="sm-mb-5">
-              <h3 className="h3 mb-3">Marketplace</h3>
+              <h3 className="h3 mb-3">Chains</h3>
               <div>
                 <span className="footer__links">
                   <Link href="/">All NFTs</Link>

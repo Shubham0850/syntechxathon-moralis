@@ -2,8 +2,6 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import toast, { Toaster } from "react-hot-toast";
-
 export default function Nav() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -30,7 +28,6 @@ export default function Nav() {
 
   return (
     <div className={`nav ${visible && `nav-blured-bg`}`}>
-      <Toaster position="top-center" reverseOrder={false} />
       <Container fluid className="cont">
         <Row className="nav__row">
           <Col md={3} className="nav__logo">
@@ -38,15 +35,15 @@ export default function Nav() {
           </Col>
           <Col sm={0} md={6} className="nav__links hide-on-phone">
             <span className="nav__link">
-              <Link href="/">Community</Link>
+              <Link href="/">home</Link>
             </span>
 
             <span className="nav__link">
-              <Link href="/">Market</Link>
+              <Link href="/">Moralis</Link>
             </span>
 
             <span className="nav__link">
-              <Link href="/">Trading</Link>
+              <Link href="/">Details</Link>
             </span>
           </Col>
 
