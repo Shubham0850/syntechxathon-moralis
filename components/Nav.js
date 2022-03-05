@@ -1,10 +1,13 @@
 import Link from "next/link";
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Nav() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [address, setAddress] = useState(null);
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
@@ -25,10 +28,9 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible, handleScroll]);
 
-  console.log(visible);
-
   return (
     <div className={`nav ${visible && `nav-blured-bg`}`}>
+      <Toaster position="top-center" reverseOrder={false} />
       <Container fluid className="cont">
         <Row className="nav__row">
           <Col md={3} className="nav__logo">
@@ -49,7 +51,16 @@ export default function Nav() {
           </Col>
 
           <Col md={3} className="nav__cta">
-            <button className="btns">Connect wallet</button>
+            {address ? (
+              <button className="btns--connected btns">{address}</button>
+            ) : (
+              <button
+                className="btns"
+                onClick={() => connectWallet("injected")}
+              >
+                Connect wallet
+              </button>
+            )}
           </Col>
         </Row>
       </Container>

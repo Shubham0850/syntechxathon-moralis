@@ -1,11 +1,14 @@
 import Head from 'next/head'
+import Auctions from '../components/Auctions'
 import CricketNft from '../components/CricketNft'
 import FootballNft from '../components/FootballNft'
 import Header from '../components/Header'
 import HockeyNft from '../components/HockeyNft'
 import NftCollection from '../components/NftCollection'
+import TrandingNft from '../components/TrandingNft'
 
 export default function Home() {
+  
   return (
     <div>
       <Head>
@@ -15,6 +18,8 @@ export default function Home() {
       </Head>
 
       <Header/>
+      <Auctions/>
+      <TrandingNft/>
       <CricketNft/>
       <FootballNft/>
       <HockeyNft/>

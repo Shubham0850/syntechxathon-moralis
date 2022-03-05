@@ -135,8 +135,8 @@
                 z-index: 10;
                 height: 1px;
                 width: 1px;
-                border-top: 45px solid #3E4142;
-                border-right: 45px solid #3E4142;
+                border-top: 45px solid #3e4142;
+                border-right: 45px solid #3e4142;
                 border-left: 45px solid transparent;
                 border-bottom: 45px solid transparent;
                 border-radius: 0 30px 0 0;
@@ -439,37 +439,14 @@
     backdrop-filter: blur(45px);
     overflow: hidden;
 
-    &__profile {
-        display: flex;
-        align-items: center;
-        padding: 10px;
+
+    &__nft {
         width: 100%;
-
-        position: absolute;
-        top: 10px;
-        left: 10px;
-
-        .p {
-            margin: 0;
-            font-size: 13px;
-        }
-    }
-    &__profile-pic {
-        margin-right: 10px;
-        @include center;
-
-        img {
-            border-radius: 50%;
-
-        }
-    }
-
-    &__nft{
-        width: 100%;
-        height: 400px;
+        height: auto;
+        max-height: 400px;
         overflow: hidden;
 
-        img{
+        img {
             width: 100%;
             height: 100%;
             border-radius: 10px;
@@ -478,21 +455,111 @@
         }
     }
 
-    &__price{
-        width: calc(100% - 20px);
+    &__price {
+        width: calc(100%);
         padding: 10px;
 
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
+        .h3{
+            font-family: $font-primary;
+        }
+    }
 
+    &__btn{
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
+
+        .p{
+            font-size: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.auctions-card {
+    width: 100%;
+    height: 420px;
+    padding: 10px;
+
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    backdrop-filter: blur(45px);
+    overflow: hidden;
+
+    &__nft-box {
+        width: 100%;
+        height: 70%;
+
+        position: relative;
+
+        .nft {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .time {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 10;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 13px;
+            border-radius: 8px;
+
+            background: rgba(0, 0, 0, 0.08);
+            backdrop-filter: blur(30px);
+        }
+    }
+
+    &__details {
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+        color: #fff;
+        padding: 10px;
+
+        .nft-name {
+            font-size: 20px;
+            margin: 0;
+        }
+        .p {
+            font-size: 12px;
+        }
+        .username {
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(233, 232, 232);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .owner-bid-box {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 10px;
+
+            .p {
+                width: 50%;
+            }
+        }
+        .owner-box {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .owner-pic {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
     }
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import HeaderNftCard from "./cards/HeaderNftCard";
@@ -19,7 +20,9 @@ export default function Header() {
                 </p>
                 <Row>
                   <Col>
-                    <button className="btns">Explore</button>
+                    <Link href="/collections/12">
+                      <button className="btns">Collections</button>
+                    </Link>
                   </Col>
                 </Row>
               </div>

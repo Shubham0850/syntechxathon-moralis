@@ -8,15 +8,15 @@ export default function NftCard(props) {
         <div className="nftcard1__profile">
           <div className="nftcard1__profile-pic">
             <Image
-              src="/placeholder.png"
+              src={`/profile.png`}
               alt="profile image"
               width={40}
               height={40}
             />
           </div>
           <div className="nftcard1__profile-name">
-            <p className="p">Sea Monster</p>
-            <p className="p">@polychainmonsters</p>
+            <p className="p">{props.userName}</p>
+            <a href={"#"} className="p">{props.userId}</a>
           </div>
         </div>
         <div className="nftcard1__nft">
@@ -24,8 +24,7 @@ export default function NftCard(props) {
         </div>
         <div className="nftcard1__price">
           <div className="nft-price">
-            <span>0.23 ETH</span>
-            
+            <span>{props.nftPrice}</span>
           </div>
           <div className="">
             <button className="btns">Buy Now</button>

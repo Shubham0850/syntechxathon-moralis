@@ -17,7 +17,7 @@ export default function NftCollection() {
           <p className="p">Show More</p>
         </Link>
       </Row>
-      <Container fluid className="cont">
+      {/* <Container fluid className="cont">
         <Row className="section__nfts">
           <Col sm={12} md={4}>
             <NftCollectionCard collectionName={"Cricket"} />
@@ -29,7 +29,7 @@ export default function NftCollection() {
             <NftCollectionCard collectionName={"Hockey"} />
           </Col>
         </Row>
-      </Container>
+      </Container> */}
     </div>
   );
 }

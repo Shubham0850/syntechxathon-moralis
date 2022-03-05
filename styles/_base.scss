@@ -36,26 +36,24 @@ $font-secondary: "Joyride";
     font-family: $font-secondary;
     font-size: 65px !important;
     color: #fff;
- 
 }
 .p {
     color: #fff;
     font-size: 15px;
 }
-.h3{
+.h3 {
     font-family: $font-secondary;
     color: #fff;
     font-size: 18px !important;
 }
 
-
-@media only screen and (max-width: 600px){
-   .h1{
-    font-size: 2em !important;
-   }
-   .p{
-       font-size: 12px;
-   }
+@media only screen and (max-width: 600px) {
+    .h1 {
+        font-size: 2em !important;
+    }
+    .p {
+        font-size: 12px;
+    }
 }
 
 // BASE STYLE
@@ -64,7 +62,10 @@ $font-secondary: "Joyride";
     max-width: 1400px;
     margin: 0 auto;
 }
-
+.icon{
+    font-size: 25px;
+    margin: 0 10px;
+}
 .btns {
     width: auto;
     padding: 10px 30px;
@@ -80,6 +81,14 @@ $font-secondary: "Joyride";
 
     &:hover {
         transform: translateY(-5px);
+    }
+
+    &--connected {
+        max-width: 200px;
+        overflow: hidden;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 
@@ -99,7 +108,18 @@ $font-secondary: "Joyride";
 }
 
 // OVERWRITE VALUE
-ion-icon{
+a{
+    text-decoration: none;
+    color: rgb(42, 41, 41);
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+p {
+    margin: 0px;
+}
+ion-icon {
     font-size: 25px;
     font-weight: bold;
 }
@@ -110,8 +130,6 @@ ion-icon{
 
 /* Track */
 ::-webkit-scrollbar-track {
-   
-
     background: radial-gradient(18.02% 49.93% at 55.58% 50.07%, #b1d26f 0%, #b1d26f 0.01%, #60e7ce 100%);
 }
 
